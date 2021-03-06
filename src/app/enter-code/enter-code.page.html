@@ -1,0 +1,76 @@
+<ion-content class="bg-white">
+<!-- 
+  <div class="logo-box">
+    <img src="/assets/imgs/logo.png" alt="">
+  </div>
+
+  <div class="login-form">
+    <h2 text-center>
+      <small>Enter your confirmation code</small>
+
+      <br>
+      <small>{{ phone }}</small>
+    </h2>
+
+    <ion-list lines="none">
+
+      <ion-item>
+        <ion-input type="text" placeholder="Enter confirmation code" text-center [(ngModel)]="confirmationCode">
+        </ion-input>
+      </ion-item>
+
+    </ion-list>
+
+    <ion-button mode="ios" color="primary" expand="block" (click)="enterToTabsPage()">
+      Confirm
+    </ion-button>
+    <br>
+    <ion-button mode="ios" color="medium" expand="block" size="small">
+      Resend code
+    </ion-button>
+
+  </div> -->
+
+  <div class="logo-box">
+    <img src="/assets/imgs/logo.png" alt="">
+  </div>
+
+  <div class="login-form">
+    <h2 text-center>
+      <small>Mobile Number</small>
+
+      <br>
+      <small>{{ phone }}</small>
+    </h2>
+
+    <ion-list lines="none">
+
+      <ion-item>
+        <ion-input type="text" placeholder="Enter Name" text-center [(ngModel)]="userName">
+        </ion-input>
+      </ion-item>
+
+      <ion-item id="setType">
+        <ion-toggle slot="start" name="setType" [(ngModel)]="profiletype" ></ion-toggle>
+        <p class="text-center font-weight-light font-12">Set your profile type as private</p>
+      </ion-item>
+
+      <ion-item id="setTypeAll">
+        <ion-toggle slot="start" name="setTypeAll" [(ngModel)]="viewpublic" ></ion-toggle>
+        <p class="text-center font-weight-light font-12">View public profile(s)</p>
+      </ion-item>
+      
+
+    </ion-list>
+
+    <ion-button mode="ios" color="primary" expand="block" (click)="enterToTabsPage()">
+      Save
+    </ion-button>
+    <br>
+    <!-- <ion-button mode="ios" color="medium" expand="block" size="small">
+      Resend code
+    </ion-button> -->
+
+  </div>
+
+</ion-content>

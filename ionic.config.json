@@ -1,0 +1,8 @@
+{
+  "name": "Chapp",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}

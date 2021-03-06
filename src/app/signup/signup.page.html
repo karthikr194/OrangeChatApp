@@ -1,0 +1,64 @@
+<ion-content class="bg-white">
+
+  <div class="logo-box">
+    <img [src]="logoPath" alt="">
+  </div>
+
+  <div class="login-form">
+    <h2 text-center>
+      <small>String</small> <ion-icon id="time-icon" name="chatbubbles"></ion-icon> <small>App</small>
+    </h2>
+
+    <ion-list lines="none">
+      <div id='recaptcha-container' style="display: none;"></div>
+      <ion-item >
+        <ion-label>Country</ion-label>
+        <ion-select class="text-secondary full-width" [(ngModel)]="confirmData.code">
+          <ion-select-option *ngFor="let country of countries" [value]="country.dial_code">
+            {{ country.name }} ({{ country.dial_code }})
+          </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-input type="number" [(ngModel)]="confirmData.mobile" placeholder="Enter Mobile Number"></ion-input>
+      </ion-item>
+
+    </ion-list>
+
+    <ion-button mode="ios" color="primary"  expand="block" (click)="onSignInSubmit()">
+      Login <ion-spinner *ngIf="!!mobile" name="circles"></ion-spinner>
+    </ion-button>
+
+    <!-- <p text-center>
+      We will send you a One Time SMS message.
+    </p> -->
+  </div>
+  <!-- <div class="otp-form" *ngIf="!loginPageFlag">
+    <h2 text-center>
+      <small>Enter your confirmation code</small>
+
+      <br>
+      <small>{{ phone }}</small>
+    </h2>
+
+    <ion-list lines="none">
+      <div id='recaptcha-container'></div>
+      <ion-item>
+        <ion-input type="text" placeholder="Enter confirmation code" text-center [(ngModel)]="confirmationCode">
+        </ion-input>
+      </ion-item>
+
+    </ion-list>
+
+    <ion-button mode="ios" color="primary" expand="block" (click)="enterToTabsPage()">
+      Confirm
+    </ion-button>
+    <br>
+    <ion-button mode="ios" color="medium" expand="block" size="small">
+      Resend code
+    </ion-button>
+
+  </div> -->
+
+</ion-content>

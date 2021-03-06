@@ -1,0 +1,29 @@
+#setType{
+    background: white;
+}
+#setTypeAll{
+    background: white;
+}
+
+.font-12{
+    font-size: small;
+}
+
+.login-form {
+    width: 75%;
+    margin: auto;
+
+    ion-list {
+        background: none;
+        ion-item {
+            background: rgba(var(--ion-color-primary-rgb), 0.09);
+            --background: none;
+            border-radius: 10px;
+            padding: 3px 20px !important;
+            margin-bottom: 2px;
+            border: none !important;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+        }
+    }
+}

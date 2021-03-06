@@ -1,0 +1,25 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "Chapp",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {
+    "preferences": {
+      "ScrollEnabled": "false",
+      "BackupWebStorage": "none",
+      "SplashMaintainAspectRatio": "true",
+      "FadeSplashScreenDuration": "300",
+      "SplashShowOnlyFirstTime": "false",
+      "SplashScreen": "assets/imgs/logo.png",
+      "SplashScreenDelay": "3000",
+      "SplashScreenBackgroundColor": "#000",
+      "android-minSdkVersion": "22"
+    }
+  }
+}
